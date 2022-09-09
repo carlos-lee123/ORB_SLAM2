@@ -891,6 +891,7 @@ int Initializer::CheckRT(const cv::Mat &R, const cv::Mat &t, const vector<cv::Ke
 
         if(cosParallax<0.99998)
             vbGood[vMatches12[i].first]=true;
+            nGood++;
     }
 
     if(nGood>0)
